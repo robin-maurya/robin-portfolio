@@ -1,0 +1,20 @@
+# Frontend
+portfolio-frontend/node_modules/
+portfolio-frontend/.next/
+portfolio-frontend/out/
+
+# Backend
+portfolio-backend/target/
+
+# IDE
+.idea/
+*.iml
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
