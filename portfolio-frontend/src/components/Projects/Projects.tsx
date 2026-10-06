@@ -1,60 +1,66 @@
+
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
     return (
         <section
             id="projects"
-            className="px-6 py-24"
+            className="relative overflow-hidden px-6 py-24 md:py-28"
         >
+            {/* Background Glow */}
+            <div className="pointer-events-none absolute left-0 top-1/3 -z-10 h-80 w-80 rounded-full bg-purple-600/5 blur-3xl" />
+
+            <div className="pointer-events-none absolute bottom-1/4 right-0 -z-10 h-80 w-80 rounded-full bg-blue-600/5 blur-3xl" />
+
             <div className="mx-auto max-w-6xl">
-                <p className="mb-2 text-center text-sm font-medium uppercase tracking-wider text-blue-500">
-                    Projects
-                </p>
+                {/* Heading */}
+                <div className="mx-auto max-w-3xl text-center">
+                    <p className="text-sm font-medium uppercase tracking-[0.2em] text-blue-500">
+                        Projects
+                    </p>
 
-                <h2 className="text-center text-3xl font-bold text-white md:text-4xl">
-                    Full Stack Projects
-                </h2>
+                    <h2 className="mt-2 text-3xl font-bold tracking-tight text-white md:text-4xl">
+                        Featured Projects
+                    </h2>
 
-                <p className="mx-auto mt-4 max-w-2xl text-center text-gray-400">
-                    A collection of applications built using modern frontend,
-                    backend, and database technologies.
-                </p>
+                    <p className="mt-4 text-base leading-7 text-gray-400 md:text-lg">
+                        A selection of projects demonstrating my experience
+                        with modern frontend technologies and Java-based
+                        full-stack development.
+                    </p>
+                </div>
 
+                {/* Project Cards */}
                 <div className="mt-12 grid gap-6 lg:grid-cols-2">
                     <ProjectCard
-                        title="Personal Finance Tracker"
-                        description="A full-stack application for tracking income, expenses, budgets, and financial activity."
-                        frontend={[
+                        title="Robin Maurya Portfolio"
+                        image="/portfolio.png"
+                        description="A modern full-stack developer portfolio built with Next.js and TypeScript, supported by a Java Spring Boot REST API and MySQL database for contact form submissions."
+                        technologies={[
                             "Next.js",
+                            "React.js",
                             "TypeScript",
                             "Tailwind CSS",
-                        ]}
-                        backend={[
                             "Java",
                             "Spring Boot",
-                            "REST API",
-                        ]}
-                        database={[
                             "MySQL",
                         ]}
+                        githubUrl="https://github.com/robin-maurya/robin-portfolio"
                     />
 
                     <ProjectCard
-                        title="Task Management System"
-                        description="A full-stack task management application for creating, updating, organizing, and tracking tasks."
-                        frontend={[
+                        title="TechNest"
+                        image="/technest.png"
+                        description="A responsive IT company website built with Next.js and TypeScript, featuring reusable components, authentication flow, Context API state management, responsive navigation, and theme support."
+                        technologies={[
                             "Next.js",
+                            "React.js",
                             "TypeScript",
-                            "Tailwind CSS",
+                            "styled-components",
+                            "Context API",
                         ]}
-                        backend={[
-                            "Java",
-                            "Spring Boot",
-                            "REST API",
-                        ]}
-                        database={[
-                            "MySQL",
-                        ]}
+                        githubUrl="https://github.com/robin-maurya/technest"
+                        liveUrl="https://technest-self.vercel.app"
                     />
                 </div>
             </div>
