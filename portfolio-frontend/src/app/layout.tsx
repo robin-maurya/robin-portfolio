@@ -48,7 +48,11 @@ export const metadata: Metadata = {
     siteName: "Robin Maurya Portfolio",
     locale: "en_IN",
     ...(siteUrl
-      ? { images: [{ url: "/profile-robin.jpeg", alt: "Robin Maurya" }] }
+        ? {
+            images: [
+              { url: "/profile-robin-image.jpeg", alt: "Robin Maurya" },
+            ],
+          }
       : {}),
   },
   twitter: {
@@ -56,7 +60,7 @@ export const metadata: Metadata = {
     title: "Robin Maurya | TCS System Engineer & Full Stack Developer",
     description:
       "Official portfolio of Robin Maurya, System Engineer at TCS and Full Stack Developer.",
-    ...(siteUrl ? { images: ["/profile-robin.jpeg"] } : {}),
+    ...(siteUrl ? { images: ["/profile-robin-image.jpeg"] } : {}),
   },
   robots: {
     index: true,
@@ -97,7 +101,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               },
               description:
                 "System Engineer at TCS and Full Stack Developer specializing in React, Next.js, TypeScript, Java, and Spring Boot.",
-              image: "/profile-robin.jpeg",
+              image: "/profile-robin-image.jpeg",
               sameAs: [
                 "https://github.com/robin-maurya",
                 "https://www.linkedin.com/in/robin-maurya/",
