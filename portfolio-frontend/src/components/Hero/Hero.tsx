@@ -224,6 +224,10 @@ const Hero = () => {
             Robin Maurya
           </h1>
 
+          <p className="mt-3 text-sm font-medium tracking-wide text-gray-400 md:text-base">
+            System Engineer at Tata Consultancy Services (TCS)
+          </p>
+
           {/* Animated Role */}
           <div className="mt-5 flex min-h-[55px] w-full items-center justify-center lg:justify-start">
             <h2 className="flex items-center text-2xl font-semibold text-blue-500 sm:text-3xl md:text-4xl">
