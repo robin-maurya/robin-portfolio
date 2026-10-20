@@ -318,7 +318,7 @@ const Hero = () => {
           {/* Photo Container */}
           <div className="relative z-10 h-64 w-64 overflow-hidden rounded-full border border-gray-700/80 bg-gray-900 shadow-2xl shadow-blue-900/30 sm:h-72 sm:w-72 md:h-80 md:w-80">
             <img
-              src="/profile.jpeg"
+              src="/profile-robin-image.jpeg"
               alt="Robin Maurya"
               className="h-full w-full object-cover object-top transition duration-700 hover:scale-105"
             />
