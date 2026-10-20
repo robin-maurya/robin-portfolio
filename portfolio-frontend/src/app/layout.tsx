@@ -22,7 +22,7 @@ const siteUrl =
 export const metadata: Metadata = {
   ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
   verification: {
-    google: "_4VAsZ9jJ-Oy7dG3Hej0n64PmA5Ebqh4_4yOeLnNlE8",
+    google: "gME-lgrENS_LU7igsqok7OUIieDyXahdEASmWfATpBw",
   },
   title: "Robin Maurya | TCS System Engineer & Full Stack Developer",
   description:
