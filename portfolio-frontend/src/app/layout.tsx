@@ -21,9 +21,9 @@ const siteUrl =
 
 export const metadata: Metadata = {
   ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
-  ...(process.env.GOOGLE_SITE_VERIFICATION
-    ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
-    : {}),
+  verification: {
+    google: "_4VAsZ9jJ-Oy7dG3Hej0n64PmA5Ebqh4_4yOeLnNlE8",
+  },
   title: "Robin Maurya | TCS System Engineer & Full Stack Developer",
   description:
     "Official portfolio of Robin Maurya, System Engineer at Tata Consultancy Services (TCS) and Full Stack Developer in Delhi, India. Explore his experience, projects, and skills in React, Next.js, TypeScript, Java, and Spring Boot.",
